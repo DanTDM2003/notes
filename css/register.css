@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../image/space-background1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.container {
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    height: 480px;
+    width: 440px;
+    border: 1px solid rgb(141, 24, 170);
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgb(36, 36, 36);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .register-form h1 {
+    color: white;
+}
+
+.container .register-form .input {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 19px 0;
+    
+}
+
+.container .register-form input {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid;
+    border-color: rgb(141, 24, 170);
+    padding: 10px;
+    color: white;
+}
+
+.container .register-form button {
+    display: block;
+    justify-content: center;
+    border: none;
+    border-radius: 10px;
+    width: 80%;
+    height: 40px;
+    margin: auto;
+    margin-top: 25px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: rgb(141, 24, 170);
+    color: white;
+}
+
+.container .register-form button:hover {
+    color: black;
+    background-color: white;
+}
+
+.container .register-form #link {
+    font-size: 12px;
+    position: relative;
+    text-align: center;
+    bottom: -10px;
+}
+
+.container .register-form #warn {
+    font-size: 12px;
+    color: red;
+ }
+
+.container .register-form #link a {
+    text-decoration: none;
+    color: white;
+}
+
+.container .register-form #link a:hover {
+    text-decoration: underline;
+    color: rgb(127, 104, 133);
+}
+
+@media only screen and (max-width: 800px) {
+    .container {
+        position: relative;
+        top: 90px;
+        min-width: 288px;
+        height: 100vh;
+        border: none;
+        border-radius: 0px;
+        backdrop-filter: unset;
+        box-shadow: none;
+    }
+}

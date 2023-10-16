@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("../image/space-background1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    height: 400px;
+    width: 440px;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    border: 1px solid rgb(141, 24, 170);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 10px rgb(36, 36, 36);
+}
+
+.container .login-form h1 {
+    color: white;
+}
+
+.container .login-form .input {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 19px 0;
+}
+
+.container .login-form .icon {
+    position: absolute;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    right: 12px;
+    line-height: 57px;
+}
+
+.container .login-form input {
+    color: white;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid;
+    border-color: rgb(141, 24, 170);
+    width: 100%;
+    height: 100%;
+}
+
+ .container .login-form button {
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: rgb(141, 24, 170);
+    border: none;
+    display: block;
+    border-radius: 10px;
+    width: 80%;
+    height: 40px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    cursor: pointer;
+ }
+
+ .container .login-form button:hover {
+    color: black;
+    background-color: white;
+ }
+
+ .container .login-form #no-acc {
+    font-size: 12px;
+    text-align: center;
+ }
+
+ .container .login-form #warn {
+    font-size: 12px;
+    color: red;
+ }
+
+ .container .login-form #no-acc #link {
+    text-decoration: none;
+    color: white;
+ }
+
+ .container .login-form #no-acc #link:hover {
+    text-decoration: none;
+    color: rgb(127, 104, 133);
+    text-decoration: underline;
+ }
+
+@media only screen and (max-width: 800px) {
+    .container {
+        position: relative;
+        top: 90px;
+        min-width: 288px;
+        height: 100vh;
+        border: none;
+        border-radius: 0px;
+        backdrop-filter: unset;
+        box-shadow: none;
+    }
+}
